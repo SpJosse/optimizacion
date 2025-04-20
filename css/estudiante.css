@@ -1,0 +1,127 @@
+/* Tipografía y fondo general */
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0ecf8, #f0f4f8);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Grupo de inputs con íconos */
+.form-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.form-group i {
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Input de texto */
+input[type="text"] {
+    padding: 12px 12px 12px 36px;
+    border: 1px solid #ccd1d9;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    padding: 14px;
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 14px rgba(52, 152, 219, 0.2);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #2980b9, #2471a3);
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(41, 128, 185, 0.25);
+}
+
+/* Mensaje de confirmación o error */
+.mensaje {
+    background-color: #e9f7ef;
+    border: 1px solid #a5d6a7;
+    padding: 12px;
+    border-radius: 10px;
+    color: #2e7d32;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.mensaje i {
+    font-size: 16px;
+    color: #2e7d32;
+}
